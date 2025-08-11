@@ -109,7 +109,7 @@ const PapersList = () => {
               <div key={paper.id} className='qust-paper'>
                 <div>{paper.name.replace('.pdf', '')}</div>
                 <div className='d-flex gap-3 justify-content-center align-items-center'>
-                  <a href={`http://localhost:5000/api/prevyrspapers/getpdf/${paper.id}`} target="_blank" rel="noopener noreferrer" style={{ color: "#ffbb00" }}>
+                  <a href={`${import.meta.env.VITE_API_URL}/prevyrspapers/getpdf/${paper.id}`} target="_blank" rel="noopener noreferrer" style={{ color: "#ffbb00" }}>
                     [View]
                   </a>
                   {a.user==='nehasonkar2512@gmail.com' && <i className="fa-solid fa-trash" style={{ color: "#ffbb00" ,cursor:"pointer"}} onClick={() => handledelete(paper.id)}></i>}
