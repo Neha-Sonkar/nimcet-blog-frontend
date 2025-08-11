@@ -1,0 +1,300 @@
+.navs {
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    margin: auto;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+.find {
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    width: 90%;
+    justify-items: center;
+}
+
+.card-title {
+    color: #ffbb00;
+}
+
+.card2 {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.login,
+.signup,
+.forgetPassword,
+.forgetPasswordCode,
+.changepassword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 85vh;
+}
+
+.loginForm,
+.signupForm,
+.forgetPasswordForm,
+.forgetPasswordCodeForm,
+.changepasswordform {
+    border: 1px solid white;
+    padding: 15px;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: fit-content;
+}
+
+.pass {
+    position: relative;
+}
+
+.pass svg {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+.syllabus,
+.resources {
+    width: 1200px;
+    max-width: 75%;
+    margin: 25px auto;
+    padding-bottom: 38px;
+}
+
+.syllabus h6,
+.resources h6 {
+    margin-top: 30px;
+    font-size: 18px;
+    text-decoration: underline #ffbb00;
+    color: #ffbb00;
+}
+
+.syllabus p,
+.resources p,
+.about-page p {
+    color: #a8a5a5;
+}
+
+.papers {
+    height: 100vh;
+    min-height: fit-content;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.papers h3 {
+    margin-bottom: 50px;
+}
+
+.qust-paper-outer {
+    width: 80vw;
+    margin: auto;
+}
+
+.qust-paper {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    border: 1px solid rgb(43, 40, 40);
+    align-items: center;
+    padding: 10px;
+    margin: 10px auto;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+.k {
+    position: relative;
+}
+
+.uploadbtn {
+    border-style: none;
+    border-radius: 30px;
+    padding: 3px 15px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.link {
+    color: #ffbb00;
+
+    &:hover {
+        box-shadow: 0 1px 3px rgba(245, 194, 11, 0.25);
+    }
+}
+
+.option {
+    display: flex;
+    gap: 10px;
+}
+
+.mock {
+    background-color: #212529;
+    width: 99vw;
+    margin: auto;
+    text-align: center;
+    padding: 15px 0;
+    height: max-content;
+    margin-bottom: 100px;
+}
+
+.planner-card input {
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 12px;
+}
+
+.planner-card button {
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+.alert {
+    font-size: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+
+}
+
+.personalbox {
+    background-color: #1e1e1e;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    z-index: 120;
+    padding: 8px;
+    border: 1px solid #464646;
+}
+
+.uploadpapers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+    justify-content: center;
+    margin: auto;
+
+}
+
+h5 {
+    text-decoration: underline #ffbb00;
+}
+
+.uploadheading {
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    gap: 20px;
+}
+
+.about-page {
+    margin-bottom: 100px;
+}
+
+.about {
+    height: 100%;
+    min-height: fit-content;
+    margin-left: 20px;
+}
+
+.line {
+    width: 60vw;
+    height: 3px;
+    margin-top: 0;
+    margin-left: 20px;
+    background-color: #ffbb00;
+    opacity: 1;
+}
+
+.boxUpload {
+    width: 50vw;
+    height: 55vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    min-height: fit-content;
+}
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:1200px) {
+    .card-item {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:800px) {
+    .option {
+        display: none;
+    }
+
+    .qust-paper {
+        flex-direction: column;
+    }
+}
